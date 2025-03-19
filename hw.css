@@ -1,0 +1,38 @@
+/* Footer responsive */
+@media (max-width: 768px) {
+  .footer-links-wrapper ul {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 0 10px;
+    display: none;
+  }
+  .footer-links-wrapper h3 {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.6s ease;
+  } /* Added */
+  .footer-links-wrapper h3.expanded {
+    background-color: #dedddd;
+  } /* Added */
+  .footer-links-wrapper h3:hover {
+    background: #dedddd;
+  } /* Added */
+  .footer-links-wrapper h3:after {
+    font-family: "FontAwesome";
+    /* content: '\f067'; */
+    content: "\f107";
+    font-size: 16px; /* Added */
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+
+  .footer-links-wrapper h3.expanded:after {
+    font-family: "FontAwesome";
+    /* content: '\f00d'; Added */
+    content: "\f106"; /* Added */
+    padding-left: 10px;
+    position: absolute;
+    right: 25px;
+  }
+}
